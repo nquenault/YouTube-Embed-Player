@@ -49,9 +49,10 @@ Temporary Items
 # Visual Studio
 *.pdb
 *.suo
-#*.png
+*.png
 *.jpg
 *.gif
+!Screens/*
 *.vshost.*
 *.user
 */bin/Debug/*
