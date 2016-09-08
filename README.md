@@ -2,7 +2,7 @@
 
 Watch YouTube videos as embed in windows :) 
 
-Download Link : http://nqs.fr/bI6VY9NJbo
+Download Link : http://nqs.fr/cmoEP85dj8
 
 <img src="https://raw.githubusercontent.com/nquenault/youtube-embed-player/master/Screens/screen-trending.png" />
 
