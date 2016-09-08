@@ -1,4 +1,4 @@
-# Youtube Embed Player
+# YouTube Embed Player
 
 Watch YouTube videos as embed in windows :) 
 
