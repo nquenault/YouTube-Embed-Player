@@ -18,7 +18,7 @@ namespace YouTubeEmbedPlayer
         {
             InitializeComponent();
 
-            string version = CurrentVersion.Major.ToString() + "." + CurrentVersion.Minor;
+            string version = CurrentVersion.Major.ToString() + "." + CurrentVersion.Minor.ToString();
 
             if (CurrentVersion.Revision != 0)
                 version += "." + CurrentVersion.Revision.ToString();
