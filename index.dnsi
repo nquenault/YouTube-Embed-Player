@@ -7,15 +7,15 @@
 	<!--<shortcut target="desktop" value="Youtube Embed Player" />-->
 	<!--<shortcut target="startmenu" value="Youtube Embed Player/Youtube Embed Player" />-->
 	
-	<link src="./YouTube%20Embed%20Player/Properties/AssemblyInfo.cs" />
-	<link src="./YouTube%20Embed%20Player/Properties/Resources.Designer.cs" />
-	<link src="./YouTube%20Embed%20Player/Properties/Settings.Designer.cs" />
+	<link src="./YouTube Embed Player/Properties/AssemblyInfo.cs" />
+	<link src="./YouTube Embed Player/Properties/Resources.Designer.cs" />
+	<link src="./YouTube Embed Player/Properties/Settings.Designer.cs" />
 	
-	<link src="./YouTube%20Embed%20Player/Program.cs" />
-	<link src="./YouTube%20Embed%20Player/Windows/Main.cs" />
-	<link src="./YouTube%20Embed%20Player/Windows/Main.Designer.cs" />
-	<link src="./YouTube%20Embed%20Player/Windows/FBShare.cs" />
-	<link src="./YouTube%20Embed%20Player/Windows/FBShare.Designer.cs" />
-	<link src="./YouTube%20Embed%20Player/Windows/About.cs" />
-	<link src="./YouTube%20Embed%20Player/Windows/About.Designer.cs" />
+	<link src="./YouTube Embed Player/Program.cs" />
+	<link src="./YouTube Embed Player/Windows/Main.cs" />
+	<link src="./YouTube Embed Player/Windows/Main.Designer.cs" />
+	<link src="./YouTube Embed Player/Windows/FBShare.cs" />
+	<link src="./YouTube Embed Player/Windows/FBShare.Designer.cs" />
+	<link src="./YouTube Embed Player/Windows/About.cs" />
+	<link src="./YouTube Embed Player/Windows/About.Designer.cs" />
 </dnsi>
