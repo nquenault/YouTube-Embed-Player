@@ -174,6 +174,8 @@ namespace YouTubeEmbedPlayer
                 ShowMenuStrip = !ShowMenuStrip;
             else if (e.KeyCode == Keys.F11)
                 GoHome();
+            else if (e.KeyCode == Keys.Delete)
+                GoBack();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -248,7 +250,7 @@ namespace YouTubeEmbedPlayer
 
         private void ui_pinMenuItem_Click(object sender, EventArgs e)
         {
-            TopMost = !TopMost;            
+            TopMost = !TopMost;
 
             ui_pinMenuItem.Image = TopMost ?
                 global::YouTubeEmbedPlayer.Properties.Resources.pin_on :
