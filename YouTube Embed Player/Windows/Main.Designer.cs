@@ -1,3 +1,4 @@
+﻿using System.Windows.Forms;
 ﻿namespace YouTubeEmbedPlayer
 {
     partial class Main
@@ -92,7 +93,9 @@
             // 
             // exitToolStripMenuItem
             // 
+            MessageBox.Show("resources.GetObject");
             this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
+            MessageBox.Show("OK");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(28, 23);
             this.exitToolStripMenuItem.ToolTipText = "Exit";
