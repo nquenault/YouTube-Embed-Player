@@ -12,10 +12,8 @@
 	<link src="./YouTube Embed Player/Properties/Settings.Designer.cs" />
 	
 	<link src="./YouTube Embed Player/Program.cs" />
-	<link src="./YouTube Embed Player/Windows/Main.cs" />
-	<link src="./YouTube Embed Player/Windows/Main.Designer.cs" />
-	<link src="./YouTube Embed Player/Windows/FBShare.cs" />
-	<link src="./YouTube Embed Player/Windows/FBShare.Designer.cs" />
-	<link src="./YouTube Embed Player/Windows/About.cs" />
-	<link src="./YouTube Embed Player/Windows/About.Designer.cs" />
+	
+	<link src="./YouTube Embed Player/Windows/Main.cs" type="form" />
+	<link src="./YouTube Embed Player/Windows/FBShare.cs" type="form" />
+	<link src="./YouTube Embed Player/Windows/About.cs" type="form" />
 </dnsi>
