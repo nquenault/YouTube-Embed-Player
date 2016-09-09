@@ -1,3 +1,4 @@
+﻿using System;
 ﻿using System.Windows.Forms;
 ﻿namespace YouTubeEmbedPlayer
 {
@@ -93,7 +94,14 @@
             // 
             // exitToolStripMenuItem
             // 
-            MessageBox.Show((resources.GetObject("exitToolStripMenuItem.Image") == null).ToString());
+            try
+            {
+                MessageBox.Show((resources.GetObject("exitToolStripMenuItem.Image") == null).ToString());
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("resources.GetObject(\"exitToolStripMenuItem.Image\") ERROR : " + ex.Message);
+            }
             this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
             MessageBox.Show("OK");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
