@@ -93,7 +93,7 @@
             // 
             // exitToolStripMenuItem
             // 
-            MessageBox.Show("resources == null :" + (resources == null).ToString());
+            MessageBox.Show((resources.GetObject("exitToolStripMenuItem.Image") == null).ToString());
             this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
             MessageBox.Show("OK");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
