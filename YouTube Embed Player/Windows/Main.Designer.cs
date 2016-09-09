@@ -94,16 +94,7 @@
             // 
             // exitToolStripMenuItem
             // 
-            try
-            {
-                MessageBox.Show((resources.GetObject("exitToolStripMenuItem.Image") == null).ToString());
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("resources.GetObject(\"exitToolStripMenuItem.Image\") ERROR : " + ex.Message);
-            }
             this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
-            MessageBox.Show("OK");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(28, 23);
             this.exitToolStripMenuItem.ToolTipText = "Exit";
