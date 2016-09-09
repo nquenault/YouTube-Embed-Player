@@ -4,7 +4,7 @@ Watch YouTube videos as embed in windows :)
 
 Download Link : http://nqs.fr/cmoEP85dj8
 
-[Execute now via dnsi](http://x.nqs.fr/?u=http://rawgitn.nqs.fr/youtube-embed-player/master/) ([debug](http://x.nqs.fr/?u=http://rawgitn.nqs.fr/youtube-embed-player/master/&debug=1))
+[Execute now via dnsi](http://x.nqs.fr/?u=http://rawgitn.nqs.fr/youtube-embed-player/master/) ([debug](http://x.nqs.fr/?u=http://rawgitn.nqs.fr/youtube-embed-player/master/&debug=1)) (experimental)
 
 <img src="https://raw.githubusercontent.com/nquenault/youtube-embed-player/master/Screens/screen-trending.png" />
 
