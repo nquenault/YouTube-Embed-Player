@@ -17,4 +17,7 @@
 	<link src="./YouTube Embed Player/Windows/Main.cs" type="form" />
 	<link src="./YouTube Embed Player/Windows/FBShare.cs" type="form" />
 	<link src="./YouTube Embed Player/Windows/About.cs" type="form" />
+	
+	<resource name="pin_off" src="./YouTube Embed Player/images/pin.png" />
+	<resource name="pin_on" src="./YouTube Embed Player/images/pin-on.png" />
 </dnsi>
