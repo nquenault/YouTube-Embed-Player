@@ -10,8 +10,7 @@ namespace dnsi
     {
         public static Stream Base64ToStream(string base64String)
         {
-            byte[] bytes = Convert.FromBase64String(base64String);
-            return new MemoryStream(bytes, 0, bytes.Length);
+            return new MemoryStream(Convert.FromBase64String(base64String));
         }
 
         public static Image StreamToImage(Stream stream) { return Bitmap.FromStream(stream); }
