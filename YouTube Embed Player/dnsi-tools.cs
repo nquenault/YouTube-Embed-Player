@@ -8,10 +8,10 @@ namespace dnsi
 {
     sealed class Tools
     {
-        public static void Base64ToStream(string base64String)
+        public static Stream Base64ToStream(string base64String)
         {
             byte[] bytes = Convert.FromBase64String(base64String);
-            var ms = new MemoryStream(bytes, 0, bytes.Length);
+            return new MemoryStream(bytes, 0, bytes.Length);
         }
 
         public static Image StreamToImage(Stream stream) { return Bitmap.FromStream(stream); }
