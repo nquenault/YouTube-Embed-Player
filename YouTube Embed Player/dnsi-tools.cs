@@ -11,7 +11,14 @@ namespace dnsi
 {
     sealed class Tools
     {
-        private const string dnsiLibsPath = "https://github.com/nquenault/dnsi/raw/master/libraries/";
+        public static void Base64ToStream(string base64String)
+        {
+            byte[] bytes = Convert.FromBase64String(base64String);
+            var ms = new MemoryStream(bytes, 0, bytes.Length);
+        }
+
+        public static Image StreamToImage(Stream stream) { return Bitmap.FromStream(stream); }
+        public static Icon StreamToIcon(Stream stream) { return new Icon(stream); }
 
         public static void GetStreamByUri(Uri uri, Action<Stream> callback)
         {
@@ -35,12 +42,12 @@ namespace dnsi
 
         public static void GetImageByUri(Uri uri, Action<Image> callback)
         {
-            GetStreamByUri(uri, (s) => { callback(Bitmap.FromStream(s)); });
+            GetStreamByUri(uri, (s) => { callback(StreamToImage(s)); });
         }
 
         public static void GetIconByUri(Uri uri, Action<Icon> callback)
         {
-            GetStreamByUri(uri, (s) => { callback(new Icon(s)); });
+            GetStreamByUri(uri, (s) => { callback(StreamToIcon(s)); });
         }
     }
 }
