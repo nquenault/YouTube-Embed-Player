@@ -4,7 +4,7 @@
 	<entrypoint value="YouTubeEmbedPlayer.Program" />
 	<showsource value="false" />
 	
-	<basepath value="http://rawgitn.nqs.fr/youtube-embed-player/master/" />
+	<basepath value="http://rawgitn.nqs.fr/youtube-embed-player/master/YoutubeEmbedPlayer/" />
 	
 	<icon src="./images/icon.ico" />
 	
