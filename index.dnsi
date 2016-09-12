@@ -10,15 +10,15 @@
 	<!--<shortcut target="desktop" value="Youtube Embed Player" />-->
 	<!--<shortcut target="startmenu" value="Youtube Embed Player/Youtube Embed Player" />-->
 	
-	<link src="./YouTube Embed Player/Properties/AssemblyInfo.cs" />
-	<link src="./YouTube Embed Player/Properties/Resources.Designer.cs" />
-	<link src="./YouTube Embed Player/Properties/Settings.Designer.cs" />
+	<link src="YouTube Embed Player/Properties/AssemblyInfo.cs" />
+	<link src="YouTube Embed Player/Properties/Resources.Designer.cs" />
+	<link src="YouTube Embed Player/Properties/Settings.Designer.cs" />
 	
-	<link src="./YouTube Embed Player/Program.cs" />
+	<link src="YouTube Embed Player/Program.cs" />
 	
-	<link src="./YouTube Embed Player/Windows/Main.cs" type="form" />
-	<link src="./YouTube Embed Player/Windows/FBShare.cs" type="form" />
-	<link src="./YouTube Embed Player/Windows/About.cs" type="form" />
+	<link src="YouTube Embed Player/Windows/Main.cs" type="form" />
+	<link src="YouTube Embed Player/Windows/FBShare.cs" type="form" />
+	<link src="YouTube Embed Player/Windows/About.cs" type="form" />
 	
 	<resource name="pin_off" src="./YouTube Embed Player/images/pin.png" />
 	<resource name="pin_on" src="./YouTube Embed Player/images/pin-on.png" />
