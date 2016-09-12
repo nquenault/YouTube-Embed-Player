@@ -3,6 +3,9 @@
 	<autorun value="true" />
 	<entrypoint value="YouTubeEmbedPlayer.Program" />
 	<showsource value="false" />
+	
+	<basepath value="./YouTube Embed Player/" />
+	
 	<!--<shortcut icon="./YoutubeEmbedPlayer/images/icon.ico" />-->
 	<!--<shortcut target="desktop" value="Youtube Embed Player" />-->
 	<!--<shortcut target="startmenu" value="Youtube Embed Player/Youtube Embed Player" />-->
