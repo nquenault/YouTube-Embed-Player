@@ -273,6 +273,19 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="youtubeVidPageToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
+        HOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsRAAALEQF/ZF+RAAAAFXRFWHRDcmVhdGlvbiBUaW1l
+        ADYvMjQvMDn2wWvjAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M0BrLToAAAASVJREFU
+        OE+djz1Lw1AYhc8vMG1qaj+sVIMBRaGDQqHpzxKcEhAHN+lkB13EqbqIg4NgBqWDooizUnc3/8Cr5+Ze
+        iCHBxAcO7z1v7hMSfAyH9sz3p+++L2VChy7eBoPp12QiZaFDF6/9vl6JAPg1/4IuHre3dI3FKIoKv4Au
+        7no9XUXCMFSymSYkPQld3Gxu6BqTJ2S9gC6u1td0jUleNMnqhC4uPE8+x2O9Kg4dujhzXXn5+ZT/hC5O
+        lrvykPoN9mSydgxdHHUW5d5bVSHmnEzeni4OWy25dVdUSN4ks9FIn+I9XRw06nLdXVIhZSZd7Dnzctpu
+        ymWnrR6YaUh3wh0dughs+2m/VpPjhbqcNxuFwrt06CKoWs5uxXreqcxJmdAJqpbzDeP3qJ96ecuNAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAEBAAAAAAIABoBAAAZgAAACAgAAAAACAAqBAAAM4EAAAwMAAAAAAgAKglAAB2FQAAQEAAAAAA

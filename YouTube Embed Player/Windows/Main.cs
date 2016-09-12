@@ -14,11 +14,7 @@ namespace YouTubeEmbedPlayer
 
         public bool ShowMenuStrip
         {
-            get
-            {
-                return ui_MenuStrip.Visible;
-            }
-
+            get { return ui_MenuStrip.Visible; }
             set
             {
                 ui_MenuStrip.Visible = value;
@@ -116,6 +112,7 @@ namespace YouTubeEmbedPlayer
             facebookToolStripMenuItem.Enabled = IsOnVideo;
             downloadVideoToolStripMenuItem.Enabled = IsOnVideo;
             downloadMP3ToolStripMenuItem.Enabled = IsOnVideo;
+            youtubeVidPageToolStripMenuItem.Enabled = IsOnVideo;
 
             bool isLogged = ui_webBrowser.Document.Cookie.Contains("SID=");
             youtubeLoginToolStripMenuItem.Visible = !isLogged;
@@ -126,9 +123,9 @@ namespace YouTubeEmbedPlayer
         {
             uri = uri == null ? ui_webBrowser.Url : uri;
             
-            var match = Regex.Match(uri.ToString(), @"^https?://((www|m)\.)?youtube.com/watch\?v=([^&]+)?");
+            var match = Regex.Match(uri.ToString(), @"^https?://((www|m)\.)?youtube.com/watch\?v=([^&]+)?(&yepredir=([0-1]+))?");
 
-            if (match.Success)
+            if (match.Success && (!match.Groups[4].Success || (match.Groups[5].Success && match.Groups[5].Value != "0")))
             {
                 ShowMenuStrip = false;
                 GoUrl("https://www.youtube.com/embed/" + match.Groups[3].Value);
@@ -174,7 +171,7 @@ namespace YouTubeEmbedPlayer
                 ShowMenuStrip = !ShowMenuStrip;
             else if (e.KeyCode == Keys.F11)
                 GoHome();
-            else if (e.KeyCode == Keys.Delete)
+            else if (e.KeyCode == Keys.Back)
                 GoBack();
         }
 
@@ -316,6 +313,11 @@ namespace YouTubeEmbedPlayer
         private void downloadMP3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start(CurrentVideoUri.ToString().Replace("youtube.com", "sonyoutube.com"));
+        }
+
+        private void youtubeVidPageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GoUrl(CurrentVideoUri + "&yepredir=0");
         }
     }
 }
