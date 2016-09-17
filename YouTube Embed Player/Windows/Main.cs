@@ -44,7 +44,7 @@ namespace YouTubeEmbedPlayer
         public Main()
         {
             InitializeComponent();
-            
+
             ui_webBrowser.DocumentTitleChanged += UpdateWindowTitle;
             ui_webBrowser.Navigated += Navigated;
             ui_webBrowser.Navigating += Navigating;
@@ -249,9 +249,18 @@ namespace YouTubeEmbedPlayer
         {
             TopMost = !TopMost;
 
-            ui_pinMenuItem.Image = TopMost ?
+            if (TopMost)
+            {
+                ui_pinMenuItem.Image = global::YouTubeEmbedPlayer.Properties.Resources.pin_on;
+            }
+            else
+            {
+                ui_pinMenuItem.Image = global::YouTubeEmbedPlayer.Properties.Resources.pin_off;
+            }
+
+            /*ui_pinMenuItem.Image = TopMost ?
                 global::YouTubeEmbedPlayer.Properties.Resources.pin_on :
-                global::YouTubeEmbedPlayer.Properties.Resources.pin_off;
+                global::YouTubeEmbedPlayer.Properties.Resources.pin_off;*/
         }
 
         private void SetCursor(ToolStripItem toolStripItem, Cursor cursorOver)
