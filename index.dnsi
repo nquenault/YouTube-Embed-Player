@@ -2,7 +2,6 @@
 	<target value="winexe" />
 	<autorun value="true" />
 	<entrypoint value="YouTubeEmbedPlayer.Program" />
-	<showsource value="false" />
 	
 	<basepath value="http://rawgitn.nqs.fr/youtube-embed-player/master/YouTube Embed Player/" />
 	
@@ -10,6 +9,7 @@
 
 	<link src="./Properties/AssemblyInfo.cs" />
 	<link src="Properties/Resources.Designer.cs" />
+	<link src="./Properties/Resources.resx" />
 	<link src="./Properties/Settings.Designer.cs" />
 	
 	<link src="Program.cs" />
