@@ -128,7 +128,7 @@ namespace YouTubeEmbedPlayer
             if (match.Success && (!match.Groups[4].Success || (match.Groups[5].Success && match.Groups[5].Value != "0")))
             {
                 ShowMenuStrip = false;
-                GoUrl("https://www.youtube.com/embed/" + match.Groups[3].Value);
+                GoUrl("https://www.youtube.com/embed/" + match.Groups[3].Value + "?autoplay=true");
             }
             else
             // clean some ads
@@ -171,7 +171,7 @@ namespace YouTubeEmbedPlayer
                 ShowMenuStrip = !ShowMenuStrip;
             else if (e.KeyCode == Keys.F11)
                 GoHome();
-            else if (e.KeyCode == Keys.Back)
+            else if (e.KeyCode == Keys.Back && !ui_Search.Focused)
                 GoBack();
         }
 
@@ -249,18 +249,9 @@ namespace YouTubeEmbedPlayer
         {
             TopMost = !TopMost;
 
-            if (TopMost)
-            {
-                ui_pinMenuItem.Image = global::YouTubeEmbedPlayer.Properties.Resources.pin_on;
-            }
-            else
-            {
-                ui_pinMenuItem.Image = global::YouTubeEmbedPlayer.Properties.Resources.pin_off;
-            }
-
-            /*ui_pinMenuItem.Image = TopMost ?
+            ui_pinMenuItem.Image = TopMost ?
                 global::YouTubeEmbedPlayer.Properties.Resources.pin_on :
-                global::YouTubeEmbedPlayer.Properties.Resources.pin_off;*/
+                global::YouTubeEmbedPlayer.Properties.Resources.pin_off;
         }
 
         private void SetCursor(ToolStripItem toolStripItem, Cursor cursorOver)
