@@ -75,7 +75,16 @@ namespace YouTubeEmbedPlayer
         private void UpdateDefaultBrowserButton()
         {
             openBrowserToolStripMenuItem.Text = "";
-            openBrowserToolStripMenuItem.Image = Icon.ExtractAssociatedIcon(GetSystemDefaultBrowser()).ToBitmap();
+
+            try
+            {
+                openBrowserToolStripMenuItem.Image = Icon.ExtractAssociatedIcon(GetSystemDefaultBrowser()).ToBitmap();
+            }
+            catch
+            {
+                // can't fint default brower
+                openBrowserToolStripMenuItem.Visible = false;
+            }            
         }
 
         private void GoUrl(string url, Uri uri = null)
