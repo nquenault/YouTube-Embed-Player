@@ -48,8 +48,8 @@
             this.facebookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.downloadVideoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.downloadMP3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.youtubeVidPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ui_MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,7 +126,7 @@
             this.goBackToolStripMenuItem.Name = "goBackToolStripMenuItem";
             this.goBackToolStripMenuItem.Size = new System.Drawing.Size(60, 23);
             this.goBackToolStripMenuItem.Text = "Back";
-            this.goBackToolStripMenuItem.ToolTipText = "Go back";
+            this.goBackToolStripMenuItem.ToolTipText = "Go back (Alt + Left)";
             this.goBackToolStripMenuItem.Click += new System.EventHandler(this.goBackToolStripMenuItem_Click);
             // 
             // youtubeLoginToolStripMenuItem
@@ -223,15 +223,6 @@
             this.downloadMP3ToolStripMenuItem.ToolTipText = "Download sound";
             this.downloadMP3ToolStripMenuItem.Click += new System.EventHandler(this.downloadMP3ToolStripMenuItem_Click);
             // 
-            // openBrowserToolStripMenuItem
-            // 
-            this.openBrowserToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.openBrowserToolStripMenuItem.Name = "openBrowserToolStripMenuItem";
-            this.openBrowserToolStripMenuItem.Size = new System.Drawing.Size(90, 23);
-            this.openBrowserToolStripMenuItem.Text = "OpenBrowser";
-            this.openBrowserToolStripMenuItem.ToolTipText = "Open in browser";
-            this.openBrowserToolStripMenuItem.Click += new System.EventHandler(this.openBrowserToolStripMenuItem_Click);
-            // 
             // youtubeVidPageToolStripMenuItem
             // 
             this.youtubeVidPageToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -240,6 +231,15 @@
             this.youtubeVidPageToolStripMenuItem.Size = new System.Drawing.Size(28, 23);
             this.youtubeVidPageToolStripMenuItem.ToolTipText = "Go to source page";
             this.youtubeVidPageToolStripMenuItem.Click += new System.EventHandler(this.youtubeVidPageToolStripMenuItem_Click);
+            // 
+            // openBrowserToolStripMenuItem
+            // 
+            this.openBrowserToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.openBrowserToolStripMenuItem.Name = "openBrowserToolStripMenuItem";
+            this.openBrowserToolStripMenuItem.Size = new System.Drawing.Size(90, 23);
+            this.openBrowserToolStripMenuItem.Text = "OpenBrowser";
+            this.openBrowserToolStripMenuItem.ToolTipText = "Open in browser";
+            this.openBrowserToolStripMenuItem.Click += new System.EventHandler(this.openBrowserToolStripMenuItem_Click);
             // 
             // Main
             // 

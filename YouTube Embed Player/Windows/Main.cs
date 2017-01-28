@@ -180,7 +180,7 @@ namespace YouTubeEmbedPlayer
                 ShowMenuStrip = !ShowMenuStrip;
             else if (e.KeyCode == Keys.F11)
                 GoHome();
-            else if (e.KeyCode == Keys.Back && !ui_Search.Focused)
+            else if (e.Modifiers == Keys.Alt && e.KeyCode == Keys.Left && !ui_Search.Focused)
                 GoBack();
         }
 
